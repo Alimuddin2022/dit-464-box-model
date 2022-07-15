@@ -1,0 +1,84 @@
+/*Universel selector */
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+body{
+    background: greenyellow;
+}
+/* ID Selector */
+#admin-box {
+    background: gold;
+    color: black;
+    width: 30%;
+    margin: 5% auto;
+    padding: 20px;
+    text-align: center;
+}
+/*Grouping selector */
+input,
+label {
+    display: block;  
+}
+/*Combinetor= Decendent selector*/
+#admin-box hl {
+    font-size: 50px;
+}
+/*Psudo element selector */
+#admin-box hl::after {
+    content: block;
+    display: block;
+    border-top: 2px solid black;
+    margin: 20px 0px;
+}
+/* Name Selector */
+form {
+}
+label {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: auto;
+}
+input {
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    font-size: 15px;
+    color: rgb(103, 12, 221);
+}
+/*Attribute Selector*/
+input[type="submit"] {
+    background-color: red;
+    color: white;
+    margin: 20px auto;
+    font-size: 15px;
+    text-transform: uppercase;
+    border: 1px solid black;
+    transition: ease-in-out 0.4s;
+}
+
+/*Psudo Class Selector */
+input[type="submit"]:hover {
+    background-color: transparent;
+    color: grey;
+    font-weight: bold;
+}
+/*Psudo element selector */
+input::placeholder {
+    color: red;
+}
+/*class selector*/
+.pg {
+    font-size: 18px;
+    margin: 20px 0px;
+}
+/* Desendent selector */
+.pg a {
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+    background-color: black;
+    padding: 5px;
+}
